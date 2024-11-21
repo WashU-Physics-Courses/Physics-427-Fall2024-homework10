@@ -32,11 +32,13 @@ int main() {
   for (int i = -(int)hist.size() / 2; i < (int)hist.size() / 2; i++) {
     int bin = i + hist.size() / 2;
     if (i < -1) {
-      std::cout << i + 1 << " sigma: ";
+      std::cout << i << " --- " << i + 1 << " sigma: ";
     } else if (i == -1) {
-      std::cout << "-0 sigma: ";
+      std::cout << "mean - -1 sigma: ";
+    } else if (i == 0) {
+      std::cout << "mean - +1 sigma: ";
     } else {
-      std::cout << "+" << i << " sigma: ";
+      std::cout << "+" << i << " --- " << "+" << i+1 << " sigma: ";
     }
     for (int j = 0; j < hist[bin] / (N / hist.size() / 10); j++) {
       if (hist[bin] > 0.0)

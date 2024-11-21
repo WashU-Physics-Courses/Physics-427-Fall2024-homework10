@@ -19,7 +19,7 @@ For our purposes, since we are just generating one single random number, we can 
 
 Write your implementation of the Box-Muller transform in the `normal` function in the provide `random.h` header (marked as `TODO:`). The function takes two arguments, `mu` and `sigma`, and return a single normally distributed random number. The `mu` argument is the mean of the distribution and the `sigma` argument is the standard deviation. You will need to transform your result sampled using the method above using `mu` and `sigma`. Use the provided `uniform` function in the included header `random.h` to generate the uniformly distributed random numbers `u1` and `u2`.
 
-I have included a test program `test_normal.cpp` that will test your implementation. It will generate 100,000 normally distributed random variables using your implementation in `random.h` and make a histogram of the results. Use it to convince yourself that your implementation is correct. Commit your `random.h` file to the repository. Also commit the output of `test_normal.cpp` as `problem1.txt` to the repository.
+I have included a test program `test_normal.cpp` that will test your implementation. It will generate 100,000 normally distributed random variables using your implementation in `random.h` and make a histogram visualizing the results. Use it to convince yourself that your implementation is correct (look up the "68-95-99.7 rule"). Commit your `random.h` file to the repository. Also commit the output of `test_normal.cpp` as `problem1.txt` to the repository.
 
 ## 2. Brownian Motion (15 points)
 
